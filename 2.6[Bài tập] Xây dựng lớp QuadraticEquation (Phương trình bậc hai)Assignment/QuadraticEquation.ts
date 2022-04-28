@@ -43,9 +43,10 @@ class QuadraticEquation {
         } else if (delta < 0) {
             console.log("The equation has no roots")
         } else if (delta === 0) {
-            console.log("The equation has 1 root" + this.getRoot1())
+            let x = -this.getB()/(2*this.getA())
+            console.log("The equation has 1 root = " + x)
         } else {
-            console.log("The equation has 2 roots" + this.getRoot1() + ", " + this.getRoot2())
+            console.log("The equation has 2 roots are " + this.getRoot1() + ", " + this.getRoot2())
         }
     }
 }
